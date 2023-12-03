@@ -1,7 +1,7 @@
 .container {
   height: 100px;
   padding: 0px 50px;
-  background-color: #d1411e;
+  background-color: #DDD68A;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,10 +33,16 @@
   width: 50px;
   height: 50px;
 }
+.logo {
+  width: 135px;
+  height: 100%;
+  margin-top: 20px;
+  position: relative;
+}
 
 .texts {
   margin-left: 20px;
-  color: white;
+  color: #AF5825;
 }
 
 .text:first-child {
@@ -54,7 +60,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  color: white;
+  color: #AF5825;
 }
 
 .listItem {

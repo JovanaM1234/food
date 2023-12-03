@@ -164,17 +164,7 @@ const Cart = () => {
               >
                 CASH ON DELIVERY
               </button>
-              <PayPalScriptProvider
-                options={{
-                  "client-id":
-                    "Aaw65ToQUFVwqCu6AQ7-WL9LAnoCCpTv3glGbvFuwJNIpgh8OcT0lc_P5baeGp5P4FMyUeIKq3EaWawh",
-                  components: "buttons",
-                  currency: "USD",
-                  "disable-funding": "credit,card,p24",
-                }}
-              >
-                <ButtonWrapper currency={currency} showSpinner={false} />
-              </PayPalScriptProvider>
+              
             </div>
           ) : (
             <button onClick={() => setOpen(true)} className={styles.button}>

@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const Index = ({ orders, products }) => {
   const [pizzaList, setPizzaList] = useState(products);
   const [orderList, setOrderList] = useState(orders);
-  const status = ["preparing", "on the way", "delivered"];
+  //const status = ["preparing", "on the way", "delivered"];
   const router = useRouter();
 
   const handleDelete = async (id) => {
@@ -97,8 +97,6 @@ const Index = ({ orders, products }) => {
               <th>Customer</th>
               <th>Total</th>
               <th>Payment</th>
-              <th>Status</th>
-              <th>Action</th>
             </tr>
           </tbody>
           {orderList.map((order) => (
@@ -110,12 +108,8 @@ const Index = ({ orders, products }) => {
                 <td>
                   {order.method === 0 ? <span>cash</span> : <span>paid</span>}
                 </td>
-                <td>{status[order.status]}</td>
-                <td>
-                  <button onClick={() => handleStatus(order._id)}>
-                    Next Stage
-                  </button>
-                </td>
+               
+               
               </tr>
             </tbody>
           ))}

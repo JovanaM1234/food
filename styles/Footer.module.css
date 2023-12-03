@@ -1,6 +1,6 @@
 .container {
-  height: calc(100vh - 100px);
-  background-color: #222;
+  height: calc(50vh - 20px);
+  background-color:#AF5825;
   display: flex;
 }
 
@@ -9,7 +9,13 @@
   position: relative;
   display: flex;
 }
+.item2 {
+  width: 365px;
+  margin-top: 10px;
 
+  position: relative;
+  height: 122%;
+}
 .item:last-child {
   flex: 2;
   padding: 50px;
@@ -19,11 +25,12 @@
 .card {
   flex: 1;
   padding: 0 20px;
+  position: relative;
 }
 
 .title {
   font-size: 18px;
-  color: #b7903c;
+  color: white;
 }
 
 .text {

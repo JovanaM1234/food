@@ -53,7 +53,7 @@ const Productupdate = ({ pizza }) => {
         <span onClick={() => handlePage()} className={styles.close}>
           X
         </span>
-        <h1>Edit a new Pizza</h1>
+        <h1>Edit a new Product</h1>
         <div className={styles.item}>
           <label className={styles.label}>Choose an image</label>
           <input type="file"  onChange={(e) => setFile(e.target.files[0])} />
@@ -63,7 +63,7 @@ const Productupdate = ({ pizza }) => {
           <input
             className={styles.input}
             type="text"
-            placeholder={pizza.title}
+            defaultValue={pizza.title}
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
@@ -72,7 +72,7 @@ const Productupdate = ({ pizza }) => {
           <textarea
             rows={4}
             type="text"
-            placeholder={pizza.desc}
+            defaultValue={pizza.desc}
             onChange={(e) => setDesc(e.target.value)}
           />
         </div>
@@ -83,7 +83,7 @@ const Productupdate = ({ pizza }) => {
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
             
-              placeholder={pizza.prices[0]}
+              defaultValue={pizza.prices[0]}
               onChange={(e) => changePrice(e, 0)}
             />
             <input

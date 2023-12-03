@@ -28,7 +28,7 @@ const Featured = () => {
         {images.map((img, i) => (
           <div className={styles.imgContainer} key={i}>
             <Image src={img} alt="" layout="fill" objectFit="contain" placeholder="blur"
-  blurDataURL={img}/ />
+  blurDataURL={img} />
           </div>
         ))}
       </div>
